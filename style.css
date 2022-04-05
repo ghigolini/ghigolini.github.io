@@ -1,0 +1,58 @@
+body{
+    background-color: #202020;
+    margin: 0
+}
+
+h1{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 100px;
+}
+
+ul{
+    position: fixed;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: orange;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    border-right: 1px solid #202020;
+}
+
+li a:hover{
+    background-color: white;
+    color: black;
+    transition-duration: 0.2s;
+}
+
+.active{
+    background-color: chocolate;
+}
+
+.active:hover{
+    background-color: white;
+    color: black;
+}
+
+/*button{
+    color: white;
+    background-color: orange;
+    border: none;
+    padding: 15px 32px;
+    font-size: 16px;
+}*/
