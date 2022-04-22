@@ -3,94 +3,194 @@ body{
     margin: 0;
 }
 
-h1{
-    color: aliceblue;
-    text-align: center;
-    padding: 40px;
-    margin-top: 7%;
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+@media only screen and (orientation: portrait) {
+    .middletext {
+        text-align: justify;
+        background-color: white;
+        padding: 20px;
+        margin-left: 0%; 
+        margin-right: 0%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h1{
+        position: relative;
+        color: aliceblue;
+        text-align: center;
+        margin-top: 30%;
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .contacts ul{
+        position: relative;
+        list-style-type: none;
+        margin-top: 80px;
+        bottom: 20px;
+    }
+    .contacts li a{
+        float: left;
+        width: 45%;
+        padding-left: 5%;
+        cursor: pointer;
+        border: 0;
+    }
+
+    #downloadButton{
+        position: relative;
+        background-color: chartreuse;
+        color: black;
+        padding: 32px 18px;
+        border: none;
+        text-align: center;
+        font-size: 30px;
+        overflow: hidden;
+        text-decoration: none;
+        transition-duration: 0.2s;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 70px;
+        cursor: pointer;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    #downloadButton:hover{
+        background-color: green;
+        transition-duration: 0.2s;
+        color: white;
+    }
+
+    .menu ul{
+        position: fixed;
+        list-style-type: none;
+        top: 0px;
+        margin: 0;
+        padding: 0;
+        background-color: orange;
+        width: 1920px;
+        height: 45px;
+        overflow-x: auto;
+    }
+    
+    .menu li a{
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 30px;
+        text-decoration: none;
+        transition-duration: 0.2s;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .menu li a:hover{
+        background-color: white;
+        color: black;
+        transition-duration: 0.2s;
+    }
+    
+    .active{
+        background-color: chocolate;
+    }
+    
+    .active:hover{
+        background-color: white;
+        color: black;
+    }
 }
 
-.middletext {
-    text-align: justify;
-    background-color: white;
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+@media only screen and (orientation: landscape) {
+    h1{
+        position: relative;
+        color: aliceblue;
+        text-align: center;
+        margin-top: 10%;
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .middletext {
+        text-align: justify;
+        background-color: white;
+        padding: 20px;
+        margin-left: 15%; 
+        margin-right: 15%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .contacts ul{
+        position: absolute;
+        list-style-type: none;
+        bottom: 0px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .contacts li a{
+        float: left;
+        padding-left: 10px;
+        display: block;
+        cursor: pointer;
+    }
+
+    #downloadButton{
+        position: absolute;
+        background-color: chartreuse;
+        color: black;
+        padding: 32px 18px;
+        border: none;
+        text-align: center;
+        font-size: 30px;
+        overflow: hidden;
+        text-decoration: none;
+        transition-duration: 0.2s;
+        font-family: Arial, Helvetica, sans-serif;
+        bottom: 30%;
+        cursor: pointer;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    #downloadButton:hover{
+        background-color: green;
+        transition-duration: 0.2s;
+        color: white;
+    }
+
+    .menu ul{
+        position: fixed;
+        list-style-type: none;
+        top: 0px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: orange;
+        width: 100%;
+    }   
+    
+    .menu li a{
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 30px;
+        text-decoration: none;
+        transition-duration: 0.2s;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .menu li a:hover{
+        background-color: white;
+        color: black;
+        transition-duration: 0.2s;
+    }
+    
+    .active{
+        background-color: chocolate;
+    }
+    
+    .active:hover{
+        background-color: white;
+        color: black;
+    }
 }
 
-.downloadButton{
-    background-color: chartreuse;
-    color: black;
-    padding: 32px 18px;
-    border: none;
-    text-align: center;
-    font-size: 30px;
-    margin-left: 45%;
-    overflow: hidden;
-    text-decoration: none;
-    transition-duration: 0.2s;
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    top: 30px;
-    cursor: pointer;
-}
 
-.downloadButton:hover{
-    background-color: green;
-    transition-duration: 0.2s;
-    color: white;
-}
-
-.menu ul{
-    position: fixed;
-    list-style-type: none;
-    top: 0;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: orange;
-    width: 100%;
-}
-
-.menu li a{
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 30px;
-    text-decoration: none;
-    transition-duration: 0.2s;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.menu li a:hover{
-    background-color: white;
-    color: black;
-    transition-duration: 0.2s;
-}
-
-.active{
-    background-color: chocolate;
-}
-
-.active:hover{
-    background-color: white;
-    color: black;
-}
-
-.contacts ul{
-    position: fixed;
-    list-style-type: none;
-    bottom: 30px;
-    margin: 0;
-    padding: 0px 10px;
-    width: 100%;
-}
-
-.contacts li a{
-    float: left;
-    padding-left: 10px;
-    display: block;
-    cursor: pointer;
-}
