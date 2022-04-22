@@ -3,7 +3,7 @@ body{
     margin: 0;
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (orientation: portrait) {
     .middletext {
         text-align: justify;
         background-color: white;
@@ -97,7 +97,7 @@ body{
     }
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (orientation: landscape) {
     h1{
         position: relative;
         color: aliceblue;
